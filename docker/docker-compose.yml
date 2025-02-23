@@ -1,0 +1,13 @@
+services:
+  scylla:
+    image: scylladb/scylla:latest
+    container_name: scylla_db
+    ports:
+      - "9042:9042"
+    command: --smp 1 --memory 1G --developer-mode 1
+    ## 코어수 1, 메모리 1G 제한, 개발자 모드를 활성화
+    volumes:
+      - scylla-data:/var/lib/scylla
+
+volumes:
+  scylla-data:
