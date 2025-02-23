@@ -1,7 +1,9 @@
 package com.example.springbootscylla.global.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.AbstractCassandraConfiguration;
+import org.springframework.data.cassandra.core.mapping.CassandraMappingContext;
 import org.springframework.data.cassandra.repository.config.EnableCassandraRepositories;
 
 @Configuration
@@ -29,6 +31,5 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
 //        return "datacenter1";
 //    }
 
-    // 추가적인 옵션이 필요하면, getSchemaAction() 등의 메서드를 오버라이드할 수 있습니다.
 }
 
