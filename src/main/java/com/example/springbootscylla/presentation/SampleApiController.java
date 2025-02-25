@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 public class SampleApiController {
+
     private final SampleService sampleService;
 
     @GetMapping("/test")

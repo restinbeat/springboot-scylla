@@ -13,6 +13,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 @Getter
 @Table(keyspace = "sample", value = "users")
 public class Users {
+
     @PrimaryKey
     @Column(value = "user_id")
     private String userId;
